@@ -15,7 +15,7 @@ if __name__ == "__main__":
     # Example usage of the DocumentProcessor class
     
     # IMPORTANT: Set your Google API key here
-    api_key = 'AIzaSyCMeVfU8H1JI2ziMIl_Uy0V3OhDx7lK-aM'
+    api_key = 'API_KEY'
     if not api_key:
         raise ValueError("Please set your Google API key in the api_key variable.")
     

@@ -1,0 +1,11 @@
+# Gemini Structured Data Extractor Dependencies
+
+# Google Generative AI SDK (required)
+google-genai
+
+# PDF processing (required for page-by-page extraction)
+PyPDF2>=3.0.0
+
+# Development and testing (optional)
+pytest>=7.4.0
+jupyter>=1.0.0

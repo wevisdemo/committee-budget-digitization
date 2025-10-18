@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "properties": {
+    "reports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {"type": "string"},
+          "data_as_of": {"type": "string"},
+          "table_data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": {"type": "string"},
+                "rows": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "item": {"type": "string"},
+                      "budget": {"type": "double"},
+                      "disbursed": {"type": "double"},
+                      "remaining": {"type": "double"}
+                    },
+                    "required": ["item", "budget", "disbursed", "remaining"]
+                  }
+                }
+              },
+              "required": ["category", "rows"]
+            }
+          },
+          "total": {
+            "type": "object",
+            "properties": {
+              "item": {"type": "string"},
+              "budget": {"type": "double"},
+              "disbursed": {"type": "double"},
+              "remaining": {"type": "double"}
+            },
+            "required": ["item", "budget", "disbursed", "remaining"]
+          }
+        },
+        "required": ["title", "data_as_of", "table_data", "total"]
+      }
+    }
+  },
+  "required": ["reports"]
+}
+
